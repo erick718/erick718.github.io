@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    background-color: rgb(38, 148, 244);
+}
+
+a {
+    color: aliceblue;
+}
+
+a:hover {
+    color: crimson;
+}
+
+b {
+    font-weight: 800;
+}
+
+main {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.index {
+    text-align: center;
+}
+
+ul, p {
+    text-align: left;
+}
+
+img {
+    width: 60%;
+}
+
+figcaption {
+    text-align: center;
+    font-style: oblique;
+}

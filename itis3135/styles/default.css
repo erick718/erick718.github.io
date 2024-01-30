@@ -1,14 +1,14 @@
 body {
     text-align: center;
-    background-color: rgb(38, 148, 244);
+    background-color: #80A4ED;
 }
 
 a {
-    color: aliceblue;
+    color: #FBB7C0;
 }
 
 a:hover {
-    color: crimson;
+    color: darkgreen;
 }
 
 b {

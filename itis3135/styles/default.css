@@ -1,10 +1,14 @@
+* {
+    color: #AEC3B0;
+}
+
 body {
     text-align: center;
-    background-color: #80A4ED;
+    background-color: #392F5A;
 }
 
 a {
-    color: #FBB7C0;
+    color: darksalmon;
 }
 
 a:hover {
@@ -24,7 +28,7 @@ main {
     text-align: center;
 }
 
-ul, p {
+ul, p, ol {
     text-align: left;
 }
 
@@ -39,4 +43,18 @@ img {
 figcaption {
     text-align: center;
     font-style: oblique;
+}
+
+.tabular {
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid;
 }

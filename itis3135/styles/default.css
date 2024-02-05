@@ -58,22 +58,39 @@ figcaption {
 table {
     border-collapse: collapse;
     width: 100%;
+    margin-bottom: 50px;
 }
 
-td {
+td, th {
     border: 1px solid;
     padding: 5px;
+    text-align: left;
+    border-color: #AEC3B0;
 }
 
 figure {
     margin: auto;
 }
 
-footer {
-    margin-top: 30px;
-}
-
 .tables {
     margin-left: 25%;
     margin-right: 25%;
+}
+
+.table2 th {
+    background-color: #A882DD;
+}
+
+th strong {
+    color: black;
+}
+
+.tables table.table2 tr:nth-child(odd) td:not(.department){
+    background-color: #AEC3B0;
+    color: #392F5A;
+}
+
+.tablecaption {
+    text-align: left;
+    font-style: normal;
 }

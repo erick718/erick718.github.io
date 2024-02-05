@@ -52,7 +52,7 @@ figcaption {
 .tabular {
     padding: 10px;
     margin: auto;
-    width: 60%;
+    width: 50%;
 }
 
 table {
@@ -71,4 +71,9 @@ figure {
 
 footer {
     margin-top: 30px;
+}
+
+.tables {
+    margin-left: 25%;
+    margin-right: 25%;
 }

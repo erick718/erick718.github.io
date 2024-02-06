@@ -112,7 +112,7 @@ fieldset {
     padding: 1.5rem 0;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 65%;
 }
 
 fieldset:last-of-type {
@@ -121,7 +121,7 @@ fieldset:last-of-type {
 
 input, select {
     width: 100%;
-    height: 15px;
+    height: 20px;
     margin: 10px 0 0 0;
     color: #392F5A;
 }
@@ -141,5 +141,8 @@ button {
     width: 70px;
     height: 30px;
     margin-right: 20px;
-    margin-bottom: 15px;
+}
+
+footer {
+    padding-bottom: 35px;
 }

@@ -23,14 +23,60 @@
     </header>
     <main>
         <h2>Forms</h2>
+        <p id="description">Please fill this out</p>
+        <form action="#">
+            <fieldset>
+                <label for="name">Enter Your Name:<input id="name" name="name" type="text" placeholder="Erick Sanchez" required/></label>
+                <label for="phone-number">Enter Your Phone Number: <input id="phone-number" name="phone-number" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required/></label>
+                <label for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder="example@email.com" required/></label>
+            </fieldset>
+            <fieldset>
+                <legend>Which do you prefer</legend>
+                <label><input type="radio" name="preference" value="earphones" class="inline" checked/> Earphones</label>
+                <label><input type="radio" name="preference" value="headphones" class="inline" /> Headphones</label>
+                <label><input type="radio" name="preference" value="speakers" class="inline" /> Speakers</label>
+            </fieldset>
+            <fieldset>
+                <legend>How do you use headphones</legend>
+                <label><input type="checkbox" value="music" class="inline" /> Music </label>
+                <label><input type="checkbox" value="gaming" class="inline" /> Gaming</label>
+                <label><input type="checkbox" value="videos" class="inline" /> Videos</label>
+                <label><input type="checkbox" value="other" class="inline" /> Other</label>
+            </fieldset>
+            <fieldset>
+                <legend>What matters to you in headphones</legend>
+                <label><input type="checkbox" value="design" class="inline" /> Design </label>
+                <label><input type="checkbox" value="audio" class="inline" /> Audio</label>
+                <label><input type="checkbox" value="wireless" class="inline" /> Wireless</label>
+                <label><input type="checkbox" value="noise-cancelling" class="inline" /> Noise-Cancelling</label>
+                <label><input type="checkbox" value="bass" class="inline" /> Bass</label>
+                <label><input type="checkbox" value="comfort" class="inline" /> Comfort</label>
+                <label><input type="checkbox" value="battery" class="inline" /> Battery Life</label>
+            </fieldset>
+            <fieldset>
+                <label for="referrer">What would be your budget on headphones
+                    <select id="referrer" name="referrer">
+                      <option value="">(select one)</option>
+                      <option value="1">$300 and up</option>
+                      <option value="2">$200 - $299</option>
+                      <option value="3">$100 - $199</option>
+                      <option value="4">$99 and down</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <button type="submit" value="submit">Submit</button>
+                <button type="reset" value="reset">Reset</button>
+            </fieldset>
+        </form>
     </main>
     <footer>
         <nav>
             <a href="https://webpages.charlotte.edu/esanch22/">Charlotte.edu</a>
             ||
-            <a href="https://github.com/erick718">Github</a>
+            <a href="https://github.com/erick718">GitHub</a>
             ||
-            <a href="https://erick718.github.io/">Github.io</a>
+            <a href="https://erick718.github.io/">GitHub.io</a>
             ||
             <a href="https://erick718.github.io/itis3135/">ITIS-3135 Github.io</a>
             ||

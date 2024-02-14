@@ -140,9 +140,18 @@ button {
     background-color: #392F5A;
     width: 70px;
     height: 30px;
-    margin-right: 20px;
 }
 
 footer {
     padding-bottom: 35px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+}
+
+button:hover {
+    background-color: bisque;
+    color: #392F5A;
 }

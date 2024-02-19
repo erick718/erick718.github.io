@@ -19,14 +19,14 @@
 
 /* Rule Overrides For Mobile Devices */
 @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
-    html {
+    html, body {
         background-color:red;
     }
 }
 
 body {
     text-align: center;
-    background-color: #392F5A;
+    
 }
 
 a {

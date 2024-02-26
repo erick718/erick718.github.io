@@ -3,27 +3,27 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Rule Overrides For Laptops / Small Screens */
+/* Rule Overrides For Laptops / Small Screens 
 @media screen and (min-width: 981px) and (max-width: 1400px) {
     main {
         background-color:yellow;
     }
 }
 
-/* Rule Overrides For Tablet Devices */
+ Rule Overrides For Tablet Devices 
 @media screen and ( min-width: 601px ) and ( max-width: 980px )  {
     main {
         background-color:orange;
     }
 }
 
-/* Rule Overrides For Mobile Devices */
+ Rule Overrides For Mobile Devices
 @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
     main {
         background-color:red;
     }
 }
-
+*/
 body {
     text-align: center;
     background-color: #392F5A;

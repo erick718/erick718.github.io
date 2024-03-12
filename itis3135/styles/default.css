@@ -1,5 +1,5 @@
 * {
-    color: #AEC3B0;
+    color: #F2F6D0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -26,16 +26,16 @@
 */
 body {
     text-align: center;
-    background-color: #392F5A;
+    background-color: #3f3268;
 }
 
 a {
-    color: darksalmon;
+    color: rgb(229, 138, 108);
     text-decoration: none;
 }
 
 a:hover {
-    color: aqua;
+    color: #23ecdf;
 }
 
 b {
@@ -86,7 +86,7 @@ td, th {
     border: 1px solid;
     padding: 5px;
     text-align: left;
-    border-color: #AEC3B0;
+    border-color: #F2F6D0;
 }
 
 figure {
@@ -100,7 +100,7 @@ figure {
 }
 
 .table2 th {
-    background-color: #A882DD;
+    background-color: #875190;
 }
 
 th strong {
@@ -108,8 +108,8 @@ th strong {
 }
 
 .tables table.table2 tr:nth-child(odd) td:not(.department){
-    background-color: #AEC3B0;
-    color: #392F5A;
+    background-color: #F2F6D0;
+    color: #3f3268;
 }
 
 .tablecaption {
@@ -157,7 +157,8 @@ input, select {
 }
 
 button {
-    background-color: #392F5A;
+    background-color: #F2F6D0;
+    color: #261e3f;
     width: 70px;
     height: 30px;
 }
@@ -172,8 +173,8 @@ footer {
 }
 
 button:hover {
-    background-color: bisque;
-    color: #392F5A;
+    background-color:blueviolet;
+    color: #F2F6D0;
 }
 
 nav {

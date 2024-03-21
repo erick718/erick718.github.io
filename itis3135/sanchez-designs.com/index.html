@@ -6,16 +6,19 @@
     <title>Sanchez Designs</title>
     <style>
         * {
-            color: #fdaa04;
+            color: #0c0b56;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
         body {
-            background-color: #007ea7;
-            text-align: center;
+            background-color: #61aeed;
             margin: 0 auto;
-            width: 45%;
+            width: 65%;
         }
-        header {
-            display:inline-flex;
+        header, footer, h1, h2 {
+            text-align: center;
+        }
+        footer {
+            padding: 25px;;
         }
         p {
             text-align: left;
@@ -23,15 +26,61 @@
         img {
             margin: 10px;
         }
+        .contact {
+            border-style: solid;
+            margin-left: 27%;
+            margin-right: 27%;
+            margin-top: 75px;
+            padding: 25px;
+        }
+        ul{
+            /*border-style: solid;*/
+            padding: 25px;
+            text-align: left;
+            margin-left: 5%;
+            list-style-type: square;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Sanchez Designs</h1>
-        <img width="100px"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhALPYm-ZdyyenbVsY2BvINkx3ntcMjwbBIWHMD9QICA&s">
+        <img width="80" height="60"  src="https://www.creativefabrica.com/wp-content/uploads/2018/09/Initial-Letter-S-Logo-Designs-Inspiration-Vector-Illustration-by-yahyaanasatokillah.jpg" alt="logo">
     </header>
     <main>
-        <p>Welcome to our web design page! We are a passionate team of designers and developers dedicated to crafting stunning and effective websites for businesses and individuals alike.</p>
+        <h2>Our Services</h2>
+        <p>Welcome to Sanchez design! We are a passionate team of designers and developers dedicated to crafting stunning and effective websites for businesses and individuals alike. With our expertise in design and development, we'll help you stand out in the digital landscape and achieve your business objectives.</p>
+        <ul>
+            <li>Expert team of talented designers and developers</li>
+            <li>100% customer satisfaction rate</li>
+            <li>Passionate about helping businesses succeed in the digital world</li>
+            <li>Top rated Web Design Company of 2024</li>
+            <li>Committed to serving your needs</li>
+        </ul>
+        <p>Beyond our commitment to excellence, our primary focus is on empowering our clients to achieve their digital goals. We strive to forge lasting partnerships by understanding your unique vision and objectives.</p>
+        <p class="contact">
+            <strong>Email: </strong>sanchezdesigns@gmail.com
+            <br>
+            <strong>Phone Number: </strong>704-444-4444
+            <br>
+            <strong>Address: </strong>567 University City Blvd, Charlotte, NC 28223
+        </p>
     </main>
+    <footer>
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html" style="text-decoration: none;">
+            <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css" style="text-decoration: none;">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+        <a href="https://wave.webaim.org/report#/referer" id="webaim" target="_blank">
+            <img style="border:0;width:88px;height:31px" src="/itis3135/images/button_validation_wcag.png" alt="logo">
+        </a>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        document.getElementById("webaim").setAttribute("href","https://wave.webaim.org/report#/" + location.href);
+    </script>
 </body>
 </html>

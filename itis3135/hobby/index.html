@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Passion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Photography Passion</h1>
+        <nav>
+            <ul>
+                <li><a href="#who">About Me</a></li>
+                <li><a href="#what">Home</a></li>
+                <li><a href="#when">Best Times</a></li>
+                <li><a href="#where">Best Locations</a></li>
+                <li><a href="#how">Techniques</a></li>
+                <li><a href="#why">Inspiration</a></li>
+            </ul>
+        </nav>
+        <img src="favicon.png" alt="Divider" class="divider">
+    </header>
+    
+    <main>
+        <section id="who">
+            <h2>About Me</h2>
+            <h3>My Journey in Photography</h3>
+            <figure>
+                <img src="images/photo1.jpg" alt="Photography Journey">
+                <figcaption>AI-Image (Prompt: "Nature photography journey")</figcaption>
+            </figure>
+            <p><em>AI-Image Prompt: "Nature photography journey" - This image represents my exploration of nature through the lens of my camera. Each snapshot captures a unique moment in my journey as a photographer, from the breathtaking landscapes to the smallest details of flora and fauna."</em></p>
+            <!-- Add more content as desired -->
+        </section>
+        
+        <section id="what">
+            <h2>Home</h2>
+            <!-- Content for home section -->
+        </section>
+        
+        <section id="when">
+            <h2>Best Times</h2>
+            <!-- Content for best times section -->
+        </section>
+        
+        <section id="where">
+            <h2>Best Locations</h2>
+            <!-- Content for best locations section -->
+        </section>
+        
+        <section id="how">
+            <h2>Techniques</h2>
+            <!-- Content for techniques section -->
+        </section>
+        
+        <section id="why">
+            <h2>Inspiration</h2>
+            <!-- Content for inspiration section -->
+        </section>
+    </main>
+    
+    <footer>
+        <a href="https://www.yourdesignfirm.com" target="_blank">Designed by Your Design Firm</a>
+        <div class="validation-buttons">
+            <a href="https://validator.w3.org/check?uri=referer" target="_blank"><img src="html-validator.png" alt="HTML Validator"></a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img src="css-validator.png" alt="CSS Validator"></a>
+            <a href="https://wave.webaim.org/report#/https://yourwebsite.com" target="_blank"><img src="accessibility-validator.png" alt="Accessibility Validator"></a>
+        </div>
+    </footer>
+
+    <script>
+        // Script to toggle visibility of sections
+        const navLinks = document.querySelectorAll('nav ul li a');
+        const sections = document.querySelectorAll('main section');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                const targetSection = document.querySelector(link.getAttribute('href'));
+                sections.forEach(section => {
+                    section.style.display = 'none';
+                });
+                targetSection.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>

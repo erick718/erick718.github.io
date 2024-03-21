@@ -188,3 +188,8 @@ form {
 h3 {
     text-align: center;
 }
+
+.welcome-output {
+    margin: 0 auto;
+    width: 50%
+}

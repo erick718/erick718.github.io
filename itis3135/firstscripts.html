@@ -15,16 +15,40 @@
         <h2>First Scripts</h2>
         <h3 id="date"></h3>
         <section class="welcome-output">
-            <label>Whats your name
-                <input id="name">
-            </label>
-            <label>How are you feeling
-                <input id="feeling">
-            </label>
+            <h4>What is your name <input id="user-name"/></h4>
+            <h4>How are you feeling <input type="text" id="user-feeling"/></h4>
             <button type="button" onclick="welcomeUser()">Submit</button>
-            <p id="welcome"></p>
+            <strong><p id="welcome"></p></strong>
         </section>
-        
+        <section class="welcome-output">
+            <h4>Enter a number from 0 to 10 <input type="text" id="user-number"/></h4>
+            <button type="button" onclick="getPolygon()">Submit</button>
+        </section>
+        <section class="welcome-output">
+            <h4>Do you like music? ♪♪♪<input type="text" id="music"/></h4>
+            <button type="button" onclick="getMusic()">Submit</button>
+            <strong><p id="music-response"></p></strong>
+        </section>
+        <section class="welcome-output">
+            <h4>What is your favorite song?<input type="text" id="fav-song"/></h4>
+            <button type="button" onclick="favSong()">Submit</button>
+            <strong><p id="song-response"></p></strong>
+        </section>
+        <section class="welcome-output">
+            <h4>Where do you listen to music?</h4>
+            <label><input type="radio" name="preference" class="inline" onclick="getSpotify()"/> Spotify </label>
+            <label><input type="radio" name="preference" class="inline" onclick="getApple()"/> Apple Music </label>
+            <label><input type="radio" name="preference" class="inline" onclick="getYoutube()"/> Youtube Music </label>
+            <br>
+            <strong><p id="music-service"></p></strong>
+        </section>
+        <section class="welcome-output">
+            <h4>Are you going to buy from Ego Shark?</h4>
+            <label><input type="radio" name="preference" class="inline" onclick="getYes()"/> Yes </label>
+            <label><input type="radio" name="preference" class="inline" onclick="getNo()"/> No</label>
+            <br>
+            <strong><p id="yes-answer"></p></strong>
+        </section>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>

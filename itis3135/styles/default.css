@@ -190,6 +190,11 @@ h3 {
 }
 
 .welcome-output {
-    margin: 0 auto;
-    width: 50%
+    margin: 0 auto 60px auto;
+    width: 45%;
+}
+
+.welcome-output label {
+    text-align: left;
+    margin-left: 25px;
 }

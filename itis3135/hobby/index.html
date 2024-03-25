@@ -3,86 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photography Passion</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Soccer Hobby Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            padding: 5px 10px;
+            margin: 0 5px;
+        }
+        a {
+            text-decoration: none;
+        }
+        section {
+            display: none; 
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+        }
+        a:hover {
+            color: crimson;
+        }
+        footer {
+            text-align: center;
+            border-top: solid;
+        }
+        footer a {
+            color: green;
+        }
+        div {
+            display: flex;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Photography Passion</h1>
+        <h1>Soccer Hobby Site</h1>
         <nav>
-            <ul>
-                <li><a href="#who">About Me</a></li>
-                <li><a href="#what">Home</a></li>
-                <li><a href="#when">Best Times</a></li>
-                <li><a href="#where">Best Locations</a></li>
-                <li><a href="#how">Techniques</a></li>
-                <li><a href="#why">Inspiration</a></li>
-            </ul>
+            <a href="#home" onclick="showSection('home')">Home</a>
+            <a href="#who" onclick="showSection('who')">Who</a>
+            <a href="#when" onclick="showSection('when')">When</a>
+            <a href="#where" onclick="showSection('where')">Where</a>
+            <a href="#how" onclick="showSection('how')">How</a>
+            <a href="#why" onclick="showSection('why')">Why</a>
+            <a href="#AI" onclick="showSection('AI')">AI Prompts</a>
         </nav>
-        <img src="favicon.png" alt="Divider" class="divider">
     </header>
-    
     <main>
-        <section id="who">
-            <h2>About Me</h2>
-            <h3>My Journey in Photography</h3>
-            <figure>
-                <img src="images/photo1.jpg" alt="Photography Journey">
-                <figcaption>AI-Image (Prompt: "Nature photography journey")</figcaption>
-            </figure>
-            <p><em>AI-Image Prompt: "Nature photography journey" - This image represents my exploration of nature through the lens of my camera. Each snapshot captures a unique moment in my journey as a photographer, from the breathtaking landscapes to the smallest details of flora and fauna."</em></p>
-            <!-- Add more content as desired -->
-        </section>
-        
-        <section id="what">
+        <section id="home" style="display: block;">
             <h2>Home</h2>
-            <!-- Content for home section -->
+            <h3>Soccer</h3>
+            <div>
+                <p>Soccer is called the beautiful game. It's the most popular sport in the world. Having played it all my life I can say it's an amazing sport to play and watch. You can play with your friends for fun or competitive on a team. It's probably a sport that everyone has played at least once in their life. 
+                    <br>
+                    <br>
+                    Soccer has a rich history and cultural significance that extends far beyond the boundaries of the game itself. It has the power to unite nations, spark celebrations, and inspire millions of fans worldwide. Whether it's the World Cup, Champions League, or local derby, soccer events capture the imagination and captivate audiences on a global scale.
+                </p>
+                <figure>
+                    <img width="300" src="images/soccer.png" alt="Playing soccer">
+                    <figcaption>Soccer being played in a staduim</figcaption>
+                    <p><em>*The AI prompt was "The sport of soccer"</em></p>
+                </figure>
+            </div>
         </section>
-        
+        <section id="who">
+            <h2>Who</h2>
+            <h3>About me</h3>
+            <div>
+                <p>I've played soccer since I can remember and still do. I was introduced to the sport by my dad when I was a kid. His favorite team was FC Barcelona and he would watch their games all the time so I also became a fan of the team too. I also started playing soccer as a kid. I would go to the park with friends or play on the a team.</p>
+                <figure>
+                    <img width="300" src="images/kidsoccer.png" alt="Kid playing soccer">
+                    <figcaption>A kid playing soccer in his backyard</figcaption>
+                    <p><em>*The AI prompt was "Kid playing soccer in backyard"</em></p>
+                </figure>
+                <figure>
+                    <img width="300" src="images/fcbarcelona.png" alt="FC Barcelona crest">
+                    <figcaption>FC Barcelona Crest</figcaption>
+                    <p><em>*The AI prompt was "FC Barcelona Crest"</em></p>
+                </figure>
+            </div>
+        </section>
         <section id="when">
-            <h2>Best Times</h2>
-            <!-- Content for best times section -->
+            <h2>When</h2>
+            <h3>Best seasons</h3>
+            <div>
+                <p>Soccer is a sport can be played during all seasons. Even in the winter you can play soccer. You can find a indoor fields to play at. It's a great way to keep playing soccer during the winter and not freeze outside. 
+                    <br>
+                    <br>
+                    You can even watch the sport all year long. During the fall, winter and spring there is club soccer to watch like FC Barcelona and during the summer there is international soccer to watch, which is countries like the Brazil. 
+                </p>
+                <figure>
+                    <img width="300" src="images/soccerinthefall.png" alt="Playing soccer during the fall">
+                    <figcaption>Soccer being played during the fall</figcaption>
+                    <p><em>*The AI prompt was "Playing soccer in the fall"</em></p>
+                </figure>
+                <figure>
+                    <img width="300" src="images/indoorsoccer.png" alt="Playing indoor soccer">
+                    <figcaption>Soccer being played indoor</figcaption>
+                    <p><em>*The AI Prompt was "Playing indoor soccer"</em></p>
+                </figure>
+            </div>
         </section>
-        
         <section id="where">
-            <h2>Best Locations</h2>
-            <!-- Content for best locations section -->
+            <h2>Where</h2>
+            <h3>Best locations</h3>
+            <div>
+                <p>You can play soccer at almost anyplace you can think of. I've playing soccer at park fields to my backyard to on the beach. If you have a ball with you, you can play. I've had times where me and my friends have played with our bookbags as the goals. Even being in Charlotte means you're going to be exposed to the sport. We have a professional soccer team here with an exciting fanbase.</p>
+                <figure>
+                    <img width="300" src="images/charlottefc.png" alt="Charlotte FC Game">
+                    <figcaption>A picture of the Carlotte FC stadium at its inaugural game</figcaption>
+                </figure>
+                <figure>
+                    <img width="300" src="images/soccerball.png" alt="Soccer ball at the beach">
+                    <figcaption>A soccer ball at the beach</figcaption>
+                    <p><em>*The AI prompt was "Soccer ball at the beach"</em></p>
+                </figure>
+            </div>
         </section>
-        
         <section id="how">
-            <h2>Techniques</h2>
-            <!-- Content for techniques section -->
+            <h2>How</h2>
+            <h3>How to get started</h3>
+            <div>
+                <p>The best way to get started is to go to a game. This could be professional, college or even high school. If you're in Charlotte I would recomend going to a Charlotte FC game, they always have a great atmosphere at the games and if you would ever be able to go to a game in Europe that would be amazing. They have the atmosphere of any sport.</p>
+                <figure>
+                    <img width="300" src="images/messi.png" alt="Messi">
+                    <figcaption>Messi when Miami played Charlotte FC</figcaption>
+                </figure>
+                <figure>
+                    <video height="400" controls alt="A Charlotte FC goal">
+                        <source src="images/goal.mov" type="video/quicktime">
+                    </video>
+                    <figcaption>A Charlotte FC goal</figcaption>
+                </figure>
+            </div>
         </section>
-        
         <section id="why">
-            <h2>Inspiration</h2>
-            <!-- Content for inspiration section -->
+            <h2>Why</h2>
+            <h3>Why get interested in soccer</h3>
+            <div>
+                <p>People play or watch soccer for a myriad of reasons, ranging from a love of the sport's fast-paced action and strategic intricacies to the sense of community and camaraderie it fosters. Whether for the sheer thrill of competition, the physical fitness benefits it offers, or the cultural significance it holds, soccer has a universal appeal that transcends boundaries and brings people together in shared passion and excitement.</p>
+                <figure>
+                    <img width="300" src="images/friendsplayingsoccer.png" alt="Friends playing soccer">
+                    <figcaption>Friends playing soccer at the park</figcaption>
+                    <p><em>*The AI prompt was "Friends playing soccer at the park"</em></p>
+                </figure>
+                <figure>
+                    <img width="300" src="images/friendswatchingsoccer.png" alt="Friends watching a soccer game">
+                    <figcaption>Friends watching soccer together</figcaption>
+                    <p><em>*The AI prompt was "Friends watching a soccer game at home"</em></p>
+                </figure>
+            </div>
+        </section>
+        <section id="AI">
+            <h2>AI Prompts</h2>
+            <ul>
+                <li>Build a multi-page Hobby Site as a single html file about soccer</li>
+                <li>How to hide a section</li>
+                <li>How to switch sections with a click</li>
+                <li>How to add a video to a HTML file</li>
+            </ul>
         </section>
     </main>
-    
     <footer>
-        <a href="https://www.yourdesignfirm.com" target="_blank">Designed by Your Design Firm</a>
-        <div class="validation-buttons">
-            <a href="https://validator.w3.org/check?uri=referer" target="_blank"><img src="html-validator.png" alt="HTML Validator"></a>
-            <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img src="css-validator.png" alt="CSS Validator"></a>
-            <a href="https://wave.webaim.org/report#/https://yourwebsite.com" target="_blank"><img src="accessibility-validator.png" alt="Accessibility Validator"></a>
-        </div>
+        <p>Page built by <a href="../sanchez-designs.com" target="_blank">Sanchez Designs</a> &copy;2024</p>
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html" style="text-decoration: none;">
+            <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css" style="text-decoration: none;">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+        <a href="https://wave.webaim.org/report#/referer" id="webaim" target="_blank">
+            <img style="border:0;width:88px;height:31px" src="../images/button_validation_wcag.png" alt="logo">
+        </a>
     </footer>
-
     <script>
-        // Script to toggle visibility of sections
-        const navLinks = document.querySelectorAll('nav ul li a');
-        const sections = document.querySelectorAll('main section');
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                const targetSection = document.querySelector(link.getAttribute('href'));
-                sections.forEach(section => {
-                    section.style.display = 'none';
-                });
-                targetSection.style.display = 'block';
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
             });
-        });
+            document.getElementById(sectionId).style.display = 'block';
+        }
     </script>
 </body>
 </html>

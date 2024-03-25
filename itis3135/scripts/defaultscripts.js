@@ -87,9 +87,9 @@ function getYoutube() {
 }
 
 function getYes() {
-    document.getElementById("yes-answer").innerHTML = "That's awesome";
+    document.getElementById("answer").innerHTML = "That's awesome";
 }
 
 function getNo() {
-    document.getElementById("yes-answer").innerHTML = "WRONG! Choose again";
+    document.getElementById("answer").innerHTML = "WRONG! Choose again";
 }

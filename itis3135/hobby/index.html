@@ -187,7 +187,7 @@
         <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css" style="text-decoration: none;">
             <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
         </a>
-        <a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/esanch22/itis3135/hobby/index.html" id="webaim" target="_blank">
+        <a href="https://wave.webaim.org/report#/" id="webaim" target="_blank">
             <img style="border:0;width:88px;height:31px" src="../images/button_validation_wcag.png" alt="logo">
         </a>
     </footer>
@@ -198,6 +198,11 @@
             });
             document.getElementById(sectionId).style.display = 'block';
         }
+    </script>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        document.getElementById("webaim").setAttribute("href","https://wave.webaim.org/report#/" + location.href);
     </script>
 </body>
 </html>

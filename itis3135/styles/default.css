@@ -45,7 +45,7 @@ main {
     width: 45%;
 }
 
-ul, p, ol {
+ul, p, ol{
     text-align: left;
 }
 
@@ -172,10 +172,6 @@ nav {
 
 form {
     border-style: solid;
-}
-
-h3 {
-    text-align: center;
 }
 
 .welcome-output {

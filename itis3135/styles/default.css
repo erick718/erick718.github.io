@@ -1,4 +1,4 @@
-/* Rule Overrides For Laptops / Small Screens */
+/* Rule Overrides For Large Screens */
 @media screen and (min-width: 1501px) {
     header, main, footer {
         font-size: 120%;

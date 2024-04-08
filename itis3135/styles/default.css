@@ -1,23 +1,30 @@
-/* Rule Overrides For Laptops / Small Screens 
-@media screen and (min-width: 981px) and (max-width: 1400px) {
-    main {
-        background-color:yellow;
+/* Rule Overrides For Laptops / Small Screens */
+@media screen and (min-width: 1501px) {
+    header, main, footer {
+        font-size: 120%;
     }
 }
 
- Rule Overrides For Tablet Devices 
+/* Rule Overrides For Laptops / Small Screens */
+@media screen and (min-width: 981px) and (max-width: 1500px) {
+    header, main, footer {
+        font-size: 110%;
+    }
+}
+
+/* Rule Overrides For Tablet Devices */
 @media screen and ( min-width: 601px ) and ( max-width: 980px )  {
-    main {
-        background-color:orange;
+    header, main, footer {
+        font-size: 100%;
     }
 }
 
- Rule Overrides For Mobile Devices
+/* Rule Overrides For Mobile Devices */
 @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
-    main {
-        background-color:red;
+    header, main, footer {
+        font-size: 90%;
     }
-}*/
+}
 
 body {
     background-color: #3f3268;
@@ -41,8 +48,8 @@ b {
 
 main {
     margin: 0 auto;
-    max-width: 1200px;
-    width: 45%;
+    
+    width: 50%;
 }
 
 ul, p, ol{

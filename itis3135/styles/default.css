@@ -1,28 +1,28 @@
 /* Rule Overrides For Large Screens */
 @media screen and (min-width: 1501px) {
     header, main, footer {
-        font-size: 120%;
+        font-size: 110%;
     }
 }
 
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and (min-width: 981px) and (max-width: 1500px) {
     header, main, footer {
-        font-size: 110%;
+        font-size: 100%;
     }
 }
 
 /* Rule Overrides For Tablet Devices */
 @media screen and ( min-width: 601px ) and ( max-width: 980px )  {
     header, main, footer {
-        font-size: 100%;
+        font-size: 90%;
     }
 }
 
 /* Rule Overrides For Mobile Devices */
 @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
     header, main, footer {
-        font-size: 90%;
+        font-size: 80%;
     }
 }
 

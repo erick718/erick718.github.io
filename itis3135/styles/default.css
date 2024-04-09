@@ -174,7 +174,7 @@ button:hover {
 }
 
 nav {
-    padding: 3px;
+    padding: 5px;
 }
 
 form {
@@ -192,5 +192,9 @@ form {
 }
 
 header {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
+}
+
+.validation-buttons {
+    margin-top: 20px;
 }

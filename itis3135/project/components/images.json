@@ -1,0 +1,16 @@
+{
+    "produceImages": [
+        {"src": "images/avocado.jpg", "alt": "Avocado"},
+        {"src": "images/carrot.jpeg", "alt": "Carrot"},
+        {"src": "images/cilantro.jpeg", "alt": "Cilantro"},
+        {"src": "images/cucumber.jpeg", "alt": "Cucumber"},
+        {"src": "images/habanero.jpeg", "alt": "Habenero"},
+        {"src": "images/jalapeno.jpeg", "alt": "Jalapeño"},
+        {"src": "images/lettuce.jpeg", "alt": "Lettuce"},
+        {"src": "images/lime.jpeg", "alt": "Lime"},
+        {"src": "images/potato.jpeg", "alt": "Potato"},
+        {"src": "images/redOnion.jpeg", "alt": "Red Onion"},
+        {"src": "images/tomato.jpeg", "alt": "Tomato"},
+        {"src": "images/yellowOnion.jpg", "alt": "Yellow Onion"}
+    ]
+}

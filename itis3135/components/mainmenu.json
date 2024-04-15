@@ -13,7 +13,8 @@
     ],
     "secondMenu": [
         {"name": "CRAPPY", "url": "stuff/*crAppY (Web)SITe.htm"},
-        {"name": "Hobby", "url": "hobby/index.html"}
+        {"name": "Hobby", "url": "hobby/index.html"},
+        {"name": "Project Site", "url": "project/index.html"}
     ],
     "footerMenu": [
         {"name": "Charlotte.edu", "url": "https://webpages.charlotte.edu/esanch22/"},

@@ -23,6 +23,15 @@ nav a:hover {
     text-decoration: underline;
 }
 
+footer a {
+    color: #1b6bd3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 main {
     padding: 20px;
     width: 60%;
@@ -30,10 +39,12 @@ main {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    color: #333;
     text-align: center;
     padding: 10px 0;
+    margin: 10px auto;
+    border-top: double #333;
+    width: 70%;
 }
 
 /* Specific Page Styles */
@@ -56,7 +67,7 @@ header h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Center the rows horizontally */
-    height: 700px; /* Set a fixed height for the flex container */
+    height: 900px; /* Set a fixed height for the flex container */
 }
 
 .product-images {
@@ -74,10 +85,6 @@ header h1 {
     height: 80%; /* Ensure the image fills its container */
     object-fit: cover; /* Maintain aspect ratio and cover the container */
     transition: transform 0.3s ease; /* Add transition effect for transform property */
-}
-
-.product-images p {
-    margin: 5; /* Remove default margin */
 }
 
 .product-images:hover img {

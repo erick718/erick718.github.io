@@ -149,5 +149,6 @@ function validateCSS() {
 // Function to validate AIM (Accessibility, SEO, and Mobile-friendliness)
 function validateAIM() {
     // Replace the URL with the tool you prefer for accessibility, SEO, and mobile-friendliness validation
-    window.open("https://wave.webaim.org/report#/", "_blank");
+    const currentURL = encodeURIComponent(window.location.href);
+    window.open(`https://wave.webaim.org/report#/${currentURL}`, "_blank");
 }

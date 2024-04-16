@@ -9,7 +9,8 @@
         {"name": "About", "url": "about.html"},
         {"name": "First Scripts", "url": "firstscripts.html"},
         {"name": "Drawing", "url": "drawing.html"},
-        {"name": "Project Outline", "url": "project_overview.html"}
+        {"name": "Project Outline", "url": "project_overview.html"},
+        {"name": "Slideshow", "url": "slideshow.html"}
     ],
     "secondMenu": [
         {"name": "CRAPPY", "url": "stuff/*crAppY (Web)SITe.htm"},

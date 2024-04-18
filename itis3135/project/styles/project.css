@@ -10,13 +10,21 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
+    position: relative;
 }
 
-header img {
-    position: absolute;
-    top: 28px;
-    left: 15%;
-    width: 90px;
+header figure {
+    position: absolute; /* Position the figure element absolutely */
+    top: 15px; /* Align to the top of the header */
+    left: 15vw; /* Align to the left of the header */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+}
+
+/* Optionally, you can add styles to the image for sizing */
+header figure img {
+    width: 100px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
 }
 
 nav a {

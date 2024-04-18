@@ -12,6 +12,13 @@ header {
     text-align: center;
 }
 
+header img {
+    position: absolute;
+    top: 28px;
+    left: 15%;
+    width: 90px;
+}
+
 nav a {
     color: #fff;
     text-decoration: none;

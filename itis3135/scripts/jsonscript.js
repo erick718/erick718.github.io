@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.json())
         .then(data => {
             const menuContainer = document.getElementById("menu-container");
+            menuContainer.innerHTML += `
+            <button class="noCSS" style="margin: 15px;" type="button" onclick="document.querySelectorAll('link[rel=stylesheet]').forEach(function(e){e.setAttribute('href','');});">No CSS</button>
+            `;
 
             // Creating the header
             const header = document.createElement("h1");
@@ -131,6 +134,13 @@ document.addEventListener("DOMContentLoaded", function() {
             certifyRWD.href = designInfo[1].url;
             certifyRWD.target = "_blank";
             designBar.appendChild(certifyRWD);
+
+            /*const validation = document.getElementById("validation-buttons");
+            const br = document.createElement("br");
+            validation.appendChild(br);
+            validation.innerHTML += `
+                <button style="margin: 15px;" type="button" onclick="document.querySelectorAll('link[rel=stylesheet]').forEach(function(e){e.setAttribute('href','');});">No CSS</button>
+            `;*/
         })
         .catch(error => console.error("Error fetching menu:", error));
 });

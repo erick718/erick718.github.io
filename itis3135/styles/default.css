@@ -190,6 +190,12 @@ form {
     text-align: left;
 }
 
+.noCSS {
+    left: 10px;
+    position: absolute;
+    top: 10px;
+}
+
 header {
     margin-bottom: 20px;
 }

@@ -10,7 +10,9 @@
         {"name": "First Scripts", "url": "firstscripts.html"},
         {"name": "Drawing", "url": "drawing.html"},
         {"name": "Project Outline", "url": "project_overview.html"},
-        {"name": "Slideshow", "url": "slideshow.html"}
+        {"name": "Slideshow", "url": "slideshow.html"},
+        {"name": "Peer Review 1", "url": "review1.html"},
+        {"name": "Peer Review 2", "url": "review2.html"}
     ],
     "secondMenu": [
         {"name": "CRAPPY", "url": "stuff/*crAppY (Web)SITe.htm"},

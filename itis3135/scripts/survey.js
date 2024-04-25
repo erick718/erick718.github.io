@@ -2,7 +2,7 @@ let courseNum = 0;
 
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('byo-form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent default form submission
+        event.preventDefault();
 
         let name = document.getElementById('name').value;
         let mascot = document.getElementById('mascot').value;
@@ -26,34 +26,32 @@ document.addEventListener('DOMContentLoaded', function() {
             courses.push(course);
         }
 
-        // Replace form with content
         const main = document.querySelector('main');
         main.innerHTML = `
-        <h1>${name} ☯ ${mascot}</h1>
-        <figure>
-        <img src= "${imageUrl}">
-        <figcaption>${caption}</figcaption>
-        </figure>
-        <ul>
-        <li><strong>Personal Background: </strong>${personalBackground}</li>
-        <li><strong>Professional Background: </strong>${proffesionalBackground}</li>
-        <li><strong>Academic Background: </strong>${academicBackground}</li>
-        <li><strong>Background in Web Development: </strong>${webBackground}</li>
-        <li><strong>Primary Computer Platform:  </strong>${platform}</li>
-        <li><strong>Courses currently taking: </strong></li>
-        <ul id='addingplace'></ul>
-        <li><strong>Funny Thing: </strong>${funnyThing}</li>
-        <li><strong>Anything Else: </strong>${anythingElse}</li>
-        </ul>
-        <a href="byo_intro.html">New Form</a>
+            <h1>${name} ☯ ${mascot}</h1>
+            <figure>
+            <img src= "${imageUrl}">
+            <figcaption>${caption}</figcaption>
+            </figure>
+            <ul>
+            <li><strong>Personal Background: </strong>${personalBackground}</li>
+            <li><strong>Professional Background: </strong>${proffesionalBackground}</li>
+            <li><strong>Academic Background: </strong>${academicBackground}</li>
+            <li><strong>Background in Web Development: </strong>${webBackground}</li>
+            <li><strong>Primary Computer Platform:  </strong>${platform}</li>
+            <li><strong>Courses currently taking: </strong></li>
+            <ul id='addingcourse'></ul>
+            <li><strong>Funny Thing: </strong>${funnyThing}</li>
+            <li><strong>Anything Else: </strong>${anythingElse}</li>
+            </ul>
+            <a href="byo_intro.html">New Form</a>
         `;
 
-        let addhere = document.getElementById('addingplace');
+        let addcourse = document.getElementById('addingcourse');
         for(let i = 0; i < courseNum; i++){
             let liElement = document.createElement("li");
             liElement.innerHTML = `${courses[i]}`;
-            addhere.appendChild(liElement);
-
+            addcourse.appendChild(liElement);
         }
     });
 });

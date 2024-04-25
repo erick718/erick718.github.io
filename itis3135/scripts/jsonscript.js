@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(data => {
             const menuContainer = document.getElementById("menu-container");
             menuContainer.innerHTML += `
-            <button class="noCSS" style="margin: 15px;" type="button" onclick="document.querySelectorAll('link[rel=stylesheet]').forEach(function(e){e.setAttribute('href','');});">No CSS</button>
+                <button class="noCSS" style="margin: 15px;" type="button" onclick="document.querySelectorAll('link[rel=stylesheet]').forEach(function(e){e.setAttribute('href','');});">No CSS</button>
             `;
 
             // Creating the header
@@ -79,6 +79,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
             const footerContainer = document.getElementById("footer");
 
+            footerContainer.innerHTML += "<p><em>Where style meets sound</em></p>";
+
             // Create the nav bar
             const footerNavbar = document.createElement("nav");
             footerContainer.appendChild(footerNavbar);
@@ -135,12 +137,25 @@ document.addEventListener("DOMContentLoaded", function() {
             certifyRWD.target = "_blank";
             designBar.appendChild(certifyRWD);
 
-            /*const validation = document.getElementById("validation-buttons");
-            const br = document.createElement("br");
-            validation.appendChild(br);
-            validation.innerHTML += `
+            /*const br = document.createElement("br");
+            footerContainer.appendChild(br);
+            footerContainer.innerHTML += `
                 <button style="margin: 15px;" type="button" onclick="document.querySelectorAll('link[rel=stylesheet]').forEach(function(e){e.setAttribute('href','');});">No CSS</button>
             `;*/
+
+            const validation = document.getElementById("validation-buttons")
+
+            validation.innerHTML += `
+                <a onclick="validateHTML()" style="text-decoration: none;">
+                    <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+                </a>
+                <a onclick="validateCSS()" style="text-decoration: none;">
+                    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+                </a>
+                <a onclick="validateAIM()">
+                    <img style="border:0;width:88px;height:31px" src="images/button_validation_wcag.png" alt="logo">
+                </a>
+            `;
         })
         .catch(error => console.error("Error fetching menu:", error));
 });

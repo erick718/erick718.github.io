@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erick Sanchez's Egotistical Shark ☯ ITIS-3135 ☯ BYO Intro</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/png" href="images/shark.png">
+    <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+</head>
+<body>
+    <header>
+        <!-- <div data-include="components/header.html"></div> -->
+        <div id="menu-container">
+            <!-- Menu items will be loaded here -->
+        </div>
+    </header>
+    <main>
+        <h2>BYO Intro</h2>
+        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+        <form class="byo-form" id="byo-form">
+            <fieldset>
+                <label for="name">Name:</label>
+                <input id="name" name="name" type="text" value="Erick Sanchez" required>
+
+                <label for="mascot">Mascot:</label>
+                <input id="mascot" name="mascot" type="text" value="Egotistical Shark" required>
+
+                <label for="image">Image:</label>
+                <input id="image" type="file" accept=".png, .jpg, .jpeg" required>
+
+                <label for="image-caption">Image Caption:</label>
+                <input id="image-caption" name="image-caption" type="text" value="Erick Sanchez" required>
+
+                <label for="personal">Personal Background:</label>
+                <input id="personal" name="personal" type="text" value="I'm from Charlotte and a junior at UNCC" required>
+
+                <label for="professional">Professional Background:</label>
+                <input id="professional" name="professional" type="text" value="I currently work at a warehouse part-time" required>
+
+                <label for="academic">Academic Background:</label>
+                <input id="academic" name="academic" type="text" value="Majoring in computer science with a concentration in software engineering" required>
+
+                <label for="background">Background in Web Development</label>
+                <input id="background" name="background" type="text" value="I have taken all the required courses for this class" required>
+
+                <label for="computer">Primary Computer Platform</label>
+                <input id="computer" name="computer" type="text" value="MacOS" required>
+
+                <label for="courses">Courses currently taking:</label>
+                <div id="course-input"></div>
+                <button id="courses" type="button" class="course-button" onclick="addCourse()">Add course</button>
+
+                <label for="funny">Funny thing:</label>
+                <input id="funny" name="funny" type="text" value="I have a orange cat">
+
+                <label for="anything">Anything else:</label>
+                <input id="anything" name="anything" type="text" value="I like to play soccer">
+
+                <label><input type="checkbox" class="inline" required>I understand that what is on this page is not password protected and I will not put anything here that I don't want publicly available.</label>
+                
+                <div class="button">
+                    <input class="byo-button" type="submit" value="Submit">
+                    <input class="byo-button" type="reset" value="Reset">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <!-- <div data-include="components/footer.html"></div> -->
+        <div id="footer">
+            <!-- Menu items will be loaded here -->
+        </div>
+        <div id="validation-buttons" class="validation-buttons">
+            <!-- <button onclick="validateHTML()" style="padding-top: 0;">Validate HTML</button>
+            <button onclick="validateCSS()" style="padding-top: 0;">Validate CSS</button>
+            <button onclick="validateAIM()" style="padding-top: 0;">Validate AIM</button> -->
+            <a onclick="validateHTML()" style="text-decoration: none;">
+                <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+            </a>
+            <a onclick="validateCSS()" style="text-decoration: none;">
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+            </a>
+            <a onclick="validateAIM()">
+                <img style="border:0;width:88px;height:31px" src="images/button_validation_wcag.png" alt="logo">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/HTMLInclude.js"></script>
+    <script src="scripts/survey.js"></script>
+    <script src="scripts/jsonscript.js"></script>
+</body>
+</html>

@@ -48,7 +48,7 @@ b {
 
 main {
     margin: 0 auto;
-    width: 50%;
+    width: 55%;
 }
 
 ul, p, ol{
@@ -134,10 +134,6 @@ fieldset {
     width: 65%;
 }
 
-fieldset:last-of-type {
-    padding-top: 0;
-}
-
 input, select {
     color: #392F5A;
     height: 20px;
@@ -154,8 +150,8 @@ input, select {
 button {
     background-color: #F2F6D0;
     color: #261e3f;
-    height: 30px;
-    width: 70px;
+    height: 28px;
+    width: 85px;
 }
 
 footer {
@@ -287,4 +283,30 @@ header {
 
 .active, .demo:hover {
     opacity: 1;
+}
+
+.review {
+    display: flex;
+    justify-content: center;
+}
+
+.byo-button {
+    width: 15%;
+}
+
+.byo-form {
+    background-color:rgb(79, 197, 230);
+    color: #333;
+}
+
+.byo-form fieldset {
+    width: 50%;
+}
+
+.byo-form label:last-of-type {
+    margin: 30px 0;
+}
+
+.course-button {
+    margin: 5px 0;
 }

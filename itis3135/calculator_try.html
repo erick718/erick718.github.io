@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erick Sanchez's Egotistical Shark ☯ ITIS-3135 ☯ Calculator Try</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/png" href="images/shark.png">
+    <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+</head>
+<body>
+    <header> 
+        <!-- <div data-include="components/header.html"></div> -->
+        <div id="menu-container">
+            <!-- Menu items will be loaded here -->
+        </div>
+    </header>
+    <main>
+        <h2>Calculator Try</h2>
+        <div class="calc-try">
+            <div class="calc-display" id="calc-display"></div>
+            <div class="calc-buttons">
+                <button type="button" class="calc-button" onclick="clearDisplay()">AC</button>
+                <button type="button" class="calc-button" onclick="display('.')">.</button>
+                <button type="button" class="calc-button" onclick="multiply('*')">*</button>
+                <button type="button" class="calc-button" onclick="divide('/')">/</button>
+
+                <button type="button" class="calc-button" onclick="display('7')">7</button>
+                <button type="button" class="calc-button" onclick="display('8')">8</button>
+                <button type="button" class="calc-button" onclick="display('9')">9</button>
+                <button type="button" class="calc-button" onclick="add('+')">+</button>
+
+                <button type="button" class="calc-button" onclick="display('4')">4</button>
+                <button type="button" class="calc-button" onclick="display('5')">5</button>
+                <button type="button" class="calc-button" onclick="display('6')">6</button>
+                <button type="button" class="calc-button" onclick="subtract('-')">-</button>
+
+                <button type="button" class="calc-button" onclick="display('1')">1</button>
+                <button type="button" class="calc-button" onclick="display('2')">2</button>
+                <button type="button" class="calc-button" onclick="display('3')">3</button>
+                <button type="button" class="calc-button" onclick="calculate()">=</button>
+
+                <button type="button" class="calc-button" onclick="display('0')">0</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- <div data-include="components/footer.html"></div> -->
+        <div id="footer">
+            <!-- Menu items will be loaded here -->
+        </div>
+        <div id="validation-buttons" class="validation-buttons">
+            <!-- <button onclick="validateHTML()" style="padding-top: 0;">Validate HTML</button>
+            <button onclick="validateCSS()" style="padding-top: 0;">Validate CSS</button>
+            <button onclick="validateAIM()" style="padding-top: 0;">Validate AIM</button> -->
+        </div>
+    </footer>
+    <script src="scripts/HTMLInclude.js"></script>
+    <script src="scripts/jsonscript.js"></script>
+    <script src="scripts/calculator_try.js"></script>
+</body>
+</html>

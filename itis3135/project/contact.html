@@ -8,16 +8,7 @@
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <h1>Alphasago Distributors INC</h1>
-            <nav>
-                <a href="./">Home</a>
-                <a href="products.html">Products</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html">Contact</a>
-                <a href="about.html">About Us</a>
-            </nav>
-        </div>
+        <div class="header-container" id="header-container"></div>
     </header>
     <main>
         <h2>Contact Info</h2>
@@ -26,23 +17,25 @@
             <li>Email: <a href="mailto:alphasago@hotmail.com">alphasago@hotmail.com</a></li>
             <li>Address: <a href="https://maps.google.com/?q=584+griffith+rd+charlotte+nc+28217" target="_blank">584 Griffith Rd, Charlotte, NC 28217</a></li>
         </ul>
+        <p>You can also send us a message here:</p>
+        <form id="form">
+            <label for="name">Company Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="20" rows="3" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
     </main>
     <footer>
-        <p>Page built by <a href="../sanchez-designs.com" target="_blank">Sanchez Designs</a> &copy;2024, <a href="https://www.freecodecamp.org/certification/ericksan/responsive-web-design" target="_blank">Certified in RWD</a></p>
-        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html" style="text-decoration: none;">
-            <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
-        </a>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css" style="text-decoration: none;">
-            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-        </a>
-        <a href="https://wave.webaim.org/report#/" id="webaim" target="_blank">
-            <img style="border:0;width:88px;height:31px" src="../images/button_validation_wcag.png" alt="Validation Logo">
-        </a>
+        <div id="footer-container"></div>
+        <div id="validation-buttons"></div>
     </footer>
-    <script>
-        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-        document.getElementById("webaim").setAttribute("href","https://wave.webaim.org/report#/" + location.href);
-    </script>
+    <script src="scripts/form.js"></script>
+    <script src="scripts/project.js"></script>
 </body>
 </html>

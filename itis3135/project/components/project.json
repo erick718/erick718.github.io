@@ -12,5 +12,16 @@
         {"src": "images/redOnion.png", "alt": "Red Onion"},
         {"src": "images/tomato.png", "alt": "Tomato"},
         {"src": "images/yellowOnion.png", "alt": "Yellow Onion"}
+    ],
+    "header": [
+        {"name": "Home", "url": "./"},
+        {"name": "Products", "url": "products.html"},
+        {"name": "Services", "url": "services.html"},
+        {"name": "Contact", "url": "contact.html"},
+        {"name": "About Us", "url": "about.html"}
+    ],
+    "footer": [
+        {"name": "Sanchez Designs", "url": "../sanchez-designs.com"},
+        {"name": "Certified in RWD", "url": "https://www.freecodecamp.org/certification/ericksan/responsive-web-design"}
     ]
 }

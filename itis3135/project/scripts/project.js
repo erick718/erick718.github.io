@@ -1,17 +1,75 @@
-fetch('components/images.json')
-            .then(response => response.json())
-            .then(data => {
-                // Display additional products using the fetched JSON data
-                const produce = document.getElementById('products');
-                data.produceImages.forEach(image => {
-                    const productDiv = document.createElement('div');
-                    productDiv.classList.add('product-images');
-                    productDiv.innerHTML = `
-                        <img src="${image.src}" alt="${image.alt}">
-                        <p>${image.alt}</p>
-                    `;
-                    produce.appendChild(productDiv);
-                });
-            })
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('components/project.json')
+        .then(response => response.json())
+        .then(data => {
+            const headerContainer = document.getElementById('header-container');
+            const header = document.createElement("h1");
+            header.textContent = "Alphasago Distributors INC";
+            headerContainer.appendChild(header);
 
-            .catch(error => console.error('Error fetching JSON:', error));
+            const navbar = document.createElement("nav");
+            headerContainer.appendChild(navbar);
+
+            const headermenu = data.header;
+            headermenu.forEach((item) => {
+                const menuItem = document.createElement("a");
+
+                menuItem.textContent = item.name;
+
+                menuItem.href = item.url;
+
+                navbar.appendChild(menuItem);
+            });
+
+            const footerContainer = document.getElementById("footer-container");
+
+            const designBar = document.createElement("p");
+            footerContainer.appendChild(designBar);
+
+            const designInfo = data.footer;
+            designBar.textContent = "Page built by ";
+
+            const designCompany = document.createElement("a");
+            designCompany.textContent = designInfo[0].name;
+            designCompany.href = designInfo[0].url;
+            designCompany.target = "_blank";
+            designBar.appendChild(designCompany);
+            designBar.innerHTML += " &copy;2024, ";
+
+            const certifyRWD = document.createElement("a")
+            certifyRWD.textContent = designInfo[1].name;
+            certifyRWD.href = designInfo[1].url;
+            certifyRWD.target = "_blank";
+            designBar.appendChild(certifyRWD);
+
+            const validation = document.getElementById("validation-buttons")
+
+            validation.innerHTML += `
+                <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html" style="text-decoration: none;">
+                    <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+                </a>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css" style="text-decoration: none;">
+                    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+                </a>
+                <a href="https://wave.webaim.org/report#/" id="webaim" target="_blank">
+                    <img style="border:0;width:88px;height:31px" src="../images/button_validation_wcag.png" alt="Validation Logo">
+                </a>
+            `;
+        })
+        .catch(error => console.error('Error fetching JSON:', error));
+});
+
+function validateHTML() {
+    const currentURL = encodeURIComponent(window.location.href);
+    window.open(`https://validator.w3.org/nu/?doc=${currentURL}`, "_blank");
+}
+
+function validateCSS() {
+    const currentURL = encodeURIComponent(window.location.href);
+    window.open(`https://jigsaw.w3.org/css-validator/validator?uri=${currentURL}&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en`, "_blank");
+}
+
+function validateAIM() {
+    const currentURL = encodeURIComponent(window.location.href);
+    window.open(`https://wave.webaim.org/report#/${currentURL}`, "_blank");
+}

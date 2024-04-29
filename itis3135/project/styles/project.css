@@ -39,12 +39,12 @@ nav a:hover {
     display: flex;
 }
 
-footer a {
+a {
     color: #004C9E;
     text-decoration: none;
 }
 
-footer a:hover {
+a:hover {
     text-decoration: underline;
 }
 
@@ -111,11 +111,92 @@ li {
     margin-bottom: 15px;
 }
 
-li a {
-    color: #004C9E;
-    text-decoration: none;
+label, button {
+    display: block;
+    margin: 0.5rem 0;
 }
 
-li a:hover {
-    text-decoration: underline;
+.slideshow img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.slideshow {
+    margin: 0 auto;
+    position: relative;
+    width: 50%;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    border-radius: 0 3px 3px 0;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -50px;
+    padding: 16px;
+    position: absolute;
+    top: 40%;
+    user-select: none;
+    width: auto;
+}
+
+/* Position the "next button" to the right */
+.next {
+    border-radius: 3px 0 0 3px;
+    right: 0;
+}
+
+.prev{
+    left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Container for image text */
+.caption-container{
+    background-color: #222;
+    color: white;
+    padding: 2px 16px;
+}
+
+.caption-container p {
+    text-align: center;
+}
+
+.row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active, .demo:hover {
+    opacity: 1;
 }

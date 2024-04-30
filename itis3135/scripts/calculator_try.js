@@ -4,7 +4,7 @@ let num2;
 let result;
 let operator;
 
-function display(value) {
+function showNum(value) {
     calcDisplay.textContent += value;
 }
 

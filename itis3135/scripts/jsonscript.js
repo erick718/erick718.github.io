@@ -81,12 +81,45 @@ document.addEventListener("DOMContentLoaded", function() {
 
             footerContainer.innerHTML += "<p><em>Where style meets sound</em></p>";
 
+            // Create the nav bar
+            const footerNavbar = document.createElement("nav");
+            footerContainer.appendChild(footerNavbar);
+
+            // Going through the footer nav
+            const footerMenu = data.footerMenu;
+            footerMenu.forEach((item, index) => {
+                // Create a new <a> element for each menu item
+                const menuItem = document.createElement("a");
+
+                // Add a class to the menu item for styling
+                menuItem.classList.add("menu-item");
+
+                // Set the text content of the menu item to the 'name' property from the JSON data
+                menuItem.textContent = item.name;
+
+                // Set the 'href' attribute of the menu item to the 'url' property from the JSON data
+                menuItem.href = item.url;
+
+                // Set the 'target' to "_blank" so it opens on another tab
+                menuItem.target = "_blank";
+
+                // Append the newly created menu item to the menu container
+                footerNavbar.appendChild(menuItem);
+
+                // Add a separator after each menu item except for the last one
+                if (index < footerMenu.length - 1) {
+                    const separator = document.createElement("span");
+                    separator.textContent = "\u00A0 ☯ \u00A0" // Customize the separator text as needed
+                    footerNavbar.appendChild(separator);
+                }
+            });
+
             // Create a p element
             const designBar = document.createElement("p");
             footerContainer.appendChild(designBar);
 
             // Adding content to the p element
-            const designInfo = data.footer;
+            const designInfo = data.design;
             designBar.textContent = "Page built by ";
 
             // Creating a new <a> element for design page

@@ -133,6 +133,13 @@ label, button {
     display: none;
 }
 
+.mySlides img {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    max-height: 300px; /* Set a fixed maximum height */
+}
+
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
     cursor: pointer;
@@ -167,6 +174,7 @@ label, button {
 .prev:hover, .next:hover {
     background-color: black;
     background-color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
 }
 
 /* Container for image text */
@@ -178,25 +186,4 @@ label, button {
 
 .caption-container p {
     text-align: center;
-}
-
-.row:after {
-    clear: both;
-    content: "";
-    display: table;
-}
-
-/* Six columns side by side */
-.column {
-    float: left;
-    width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-    opacity: 0.6;
-}
-
-.active, .demo:hover {
-    opacity: 1;
 }

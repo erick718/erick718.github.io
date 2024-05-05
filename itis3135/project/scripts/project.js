@@ -53,15 +53,15 @@ document.addEventListener("DOMContentLoaded", function() {
             const validation = document.getElementById("validation-buttons")
 
             validation.innerHTML += `
-                <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html" style="text-decoration: none;">
-                    <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
-                </a>
-                <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css" style="text-decoration: none;">
-                    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-                </a>
-                <a href="https://wave.webaim.org/report#/" id="webaim" target="_blank">
-                    <img style="border:0;width:88px;height:31px" src="../images/button_validation_wcag.png" alt="Validation Logo">
-                </a>
+            <a onclick="validateHTML()" style="text-decoration: none;">
+                <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+            </a>
+            <a onclick="validateCSS()" style="text-decoration: none;">
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+            </a>
+            <a onclick="validateAIM()">
+                <img style="border:0;width:88px;height:31px" src="../images/button_validation_wcag.png" alt="logo">
+            </a>
             `;
         })
         .catch(error => console.error('Error fetching JSON:', error));

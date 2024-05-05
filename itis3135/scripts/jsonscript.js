@@ -131,11 +131,20 @@ document.addEventListener("DOMContentLoaded", function() {
             designBar.innerHTML += " &copy;2024, ";
 
             // Creating a new <a> element for RWD certification
-            const certifyRWD = document.createElement("a")
+            const certifyRWD = document.createElement("a");
             certifyRWD.textContent = designInfo[1].name;
             certifyRWD.href = designInfo[1].url;
             certifyRWD.target = "_blank";
             designBar.appendChild(certifyRWD);
+
+            designBar.innerHTML += ", ";
+
+            // Creating a new <a> element for JS certification
+            const certifyJS = document.createElement("a");
+            certifyJS.textContent = designInfo[2].name;
+            certifyJS.href = designInfo[2].url;
+            certifyJS.target = "_blank";
+            designBar.appendChild(certifyJS);
 
             /*const br = document.createElement("br");
             footerContainer.appendChild(br);

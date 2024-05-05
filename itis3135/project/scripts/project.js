@@ -36,11 +36,19 @@ document.addEventListener("DOMContentLoaded", function() {
             designBar.appendChild(designCompany);
             designBar.innerHTML += " &copy;2024, ";
 
-            const certifyRWD = document.createElement("a")
+            const certifyRWD = document.createElement("a");
             certifyRWD.textContent = designInfo[1].name;
             certifyRWD.href = designInfo[1].url;
             certifyRWD.target = "_blank";
             designBar.appendChild(certifyRWD);
+
+            designBar.innerHTML += ", ";
+
+            const certifyJS = document.createElement("a");
+            certifyJS.textContent = designInfo[2].name;
+            certifyJS.href = designInfo[2].url;
+            certifyJS.target = "_blank";
+            designBar.appendChild(certifyJS);
 
             const validation = document.getElementById("validation-buttons")
 

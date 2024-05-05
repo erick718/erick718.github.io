@@ -22,6 +22,7 @@
     ],
     "footer": [
         {"name": "Sanchez Designs", "url": "../sanchez-designs.com"},
-        {"name": "Certified in RWD", "url": "https://www.freecodecamp.org/certification/ericksan/responsive-web-design"}
+        {"name": "Certified in RWD", "url": "https://www.freecodecamp.org/certification/ericksan/responsive-web-design"},
+        {"name": "Certified in JS", "url": "https://www.freecodecamp.org/certification/ericksan/javascript-algorithms-and-data-structures-v8"}
     ]
 }

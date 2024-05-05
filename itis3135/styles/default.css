@@ -313,9 +313,17 @@ header {
 
 .calc {
     align-items: center;
+    border-radius: 8%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 auto;
+    padding: 25px 0;
+    width: 300px;
+}
+
+.fcc {
+    background-color: #23ecdf;
 }
 
 .calc-display {
